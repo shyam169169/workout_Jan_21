@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="mySpinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="myEditText">
+        <item name="boxStrokeColor">@color/white_text</item>
+        <item name="colorControlNormal">@color/white_text</item>
+        <item name="colorControlActivated">@color/white_text</item>
+        <item name="colorControlHighlight">@color/white_text</item>
+        <item name="hintTextColor">@color/lightWhiteText</item>
+        <item name="android:textColorHint">@color/lightWhiteText</item>
+    </style>
+
+</resources>
