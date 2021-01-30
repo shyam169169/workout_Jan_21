@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".History">
+    tools:context=".View.Fragments.HistoryFragment">
     <!-- tool bar -->
 <RelativeLayout
     android:background="@color/greenText"

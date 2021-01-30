@@ -13,6 +13,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/id_card_history_item_image"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="6dp"
@@ -31,6 +32,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/id_card_history_item_workout_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Walking"
@@ -38,6 +40,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/id_card_history_item_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="You did great job."
@@ -54,7 +57,7 @@
             android:orientation="vertical">
 
             <TextView
-
+                android:id="@+id/id_card_history_item_calories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="218 Cals"
@@ -62,6 +65,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/id_card_history_item_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="01/07/2020"
