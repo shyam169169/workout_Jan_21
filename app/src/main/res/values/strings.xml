@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">WorkoutApp</string>
     <string name="history">History</string>
+    <string name="Workouts">Workouts</string>
     <string name="exercises">Exercises</string>
     <string name="exercise_details">Exercise Details</string>
     <string name="update">Update</string>
+
 
     <string-array name="gander">
         <item>Male</item>
