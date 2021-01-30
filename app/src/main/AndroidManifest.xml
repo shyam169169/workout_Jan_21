@@ -16,6 +16,8 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".View.Fragments.HistoryFragment"/>
+        <activity android:name=".View.MainActivity"/>
+        <activity android:name=".View.ExerciseActivity"/>
+        <activity android:name=".View.DumbellTrackingActivity"/>
     </application>
 </manifest>

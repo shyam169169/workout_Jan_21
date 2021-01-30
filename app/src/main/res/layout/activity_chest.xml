@@ -92,6 +92,7 @@
                     app:cardUseCompatPadding="false">
 
                     <LinearLayout
+                        android:id="@+id/id_push_up_card"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white_text"
@@ -100,6 +101,7 @@
                         android:padding="20dp">
 
                         <ImageView
+
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:src="@drawable/push_up" />
