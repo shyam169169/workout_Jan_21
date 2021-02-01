@@ -4,7 +4,7 @@ import android.content.Context;
 
 import com.example.workout_jan_21.Database.DbHelper;
 
-public class Component implements IComponent{
+public abstract class Component implements IComponent{
     /**
      * Name of the component
      */
@@ -28,9 +28,8 @@ public class Component implements IComponent{
     }
 
     @Override
-    public boolean saveComponent() {
-        return true;
-    }
+    public abstract boolean saveComponent();
+
 
     @Override
     public void setContext(Context context) {

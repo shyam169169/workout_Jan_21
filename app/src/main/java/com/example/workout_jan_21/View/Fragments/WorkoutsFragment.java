@@ -1,15 +1,11 @@
 package com.example.workout_jan_21.View.Fragments;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -18,8 +14,6 @@ import com.example.workout_jan_21.Presenter.WorkoutPresenter;
 import com.example.workout_jan_21.PresenterViewContractInterface;
 import com.example.workout_jan_21.R;
 import com.example.workout_jan_21.View.ExerciseActivity;
-import com.example.workout_jan_21.View.MainActivity;
-import com.example.workout_jan_21.View.SignUpPageActivity;
 
 import java.util.HashMap;
 
@@ -63,10 +57,5 @@ public class WorkoutsFragment extends Fragment implements PresenterViewContractI
     @Override
     public void display(HashMap<String, Object> params) {
 
-    }
-
-    @Override
-    public Context getContext() {
-        return this.getActivity();
     }
 }

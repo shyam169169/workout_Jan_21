@@ -82,6 +82,7 @@
 
 
                         <SeekBar
+                            android:id="@+id/id_seekbar_sets"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_weight="1"
@@ -95,6 +96,7 @@
                             android:thumb="@drawable/progress_thumb" />
 
                         <TextView
+                            android:id="@+id/id_seekbar_sets_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
@@ -131,6 +133,7 @@
 
 
                         <SeekBar
+                            android:id="@+id/id_seekbar_reps"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_weight="1"
@@ -144,6 +147,7 @@
                             android:thumb="@drawable/progress_thumb" />
 
                         <TextView
+                            android:id="@+id/id_seekbar_reps_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
@@ -181,6 +185,7 @@
 
 
                         <SeekBar
+                            android:id="@+id/id_seekbar_weights"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_weight="1"
@@ -194,6 +199,7 @@
                             android:thumb="@drawable/progress_thumb" />
 
                         <TextView
+                            android:id="@+id/id_seekbar_weights_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="0"
@@ -216,7 +222,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="40dp"
             android:background="@drawable/btn_green"
-            android:text="Start"
+            android:text="Continue"
             android:textAllCaps="false"
             android:textColor="@color/white_text"
             android:textSize="@dimen/size14" />

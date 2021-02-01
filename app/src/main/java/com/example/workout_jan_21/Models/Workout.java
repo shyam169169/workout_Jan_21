@@ -7,4 +7,8 @@ import java.util.ArrayList;
 public class Workout extends Component {
     protected ArrayList<Exercise> exercises;
 
+    @Override
+    public boolean saveComponent() {
+        return false;
+    }
 }

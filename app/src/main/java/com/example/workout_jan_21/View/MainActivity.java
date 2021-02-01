@@ -1,7 +1,9 @@
 package com.example.workout_jan_21.View;
 
+import android.app.Activity;
 import android.os.Bundle;
 
+import com.example.workout_jan_21.PresenterViewContractInterface;
 import com.example.workout_jan_21.R;
 import com.example.workout_jan_21.View.Fragments.HistoryFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,8 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
+import java.util.HashMap;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements PresenterViewContractInterface.IView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +38,15 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public void display(HashMap<String, Object> params) {
+
+    }
+
+    @Override
+    public Activity getActivity() {
+        return null;
     }
 }

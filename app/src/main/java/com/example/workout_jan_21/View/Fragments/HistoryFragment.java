@@ -1,5 +1,6 @@
 package com.example.workout_jan_21.View.Fragments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -45,15 +46,9 @@ public class HistoryFragment extends Fragment implements PresenterViewContractIn
         this.caloriesTextView = (TextView) findViewById(R.id.id_card_history_item_calories);*/
     }
 
-
     @Override
     public void display(HashMap<String, Object> params) {
 
-    }
-
-    @Override
-    public Context getContext() {
-        return this.getActivity();
     }
 
     public static class PageViewModel extends ViewModel {

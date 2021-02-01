@@ -1,6 +1,6 @@
 package com.example.workout_jan_21;
 
-import android.content.Context;
+import android.app.Activity;
 
 import com.example.workout_jan_21.Component.IComponent;
 
@@ -26,7 +26,7 @@ public interface PresenterViewContractInterface {
 
     public interface IView {
         public void display(HashMap<String, Object> params);
-        public Context getContext();
+        public Activity getActivity();
 
     }
 }

@@ -44,7 +44,7 @@ public class SignUpPresenter implements PresenterViewContractInterface.IPresente
      */
     @Override
     public void saveMessageToDB(HashMap<String, Object> params) {
-        this.person.setContext(this.view.getContext());
+        this.person.setContext(this.view.getActivity());
         this.person.setName((String) params.get("name"));
         this.person.saveComponent();
     }
