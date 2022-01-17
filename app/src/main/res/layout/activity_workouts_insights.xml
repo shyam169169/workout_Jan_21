@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LastSevenWorkouts">
+    tools:context=".View.InsightsActivity">
     <!-- tool bar -->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -58,16 +58,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="400dp"
             android:layout_marginTop="10dp"
             android:elevation="4dp"
             android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/id_pie_chart"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Add your chart" />
+                >
+
+            </com.github.mikephil.charting.charts.PieChart>
+
         </LinearLayout>
 
 

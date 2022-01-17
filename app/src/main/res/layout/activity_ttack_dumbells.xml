@@ -216,6 +216,7 @@
 
         <!-- complete button -->
         <Button
+            android:id="@+id/id_dumbell_tracking_continue_button"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

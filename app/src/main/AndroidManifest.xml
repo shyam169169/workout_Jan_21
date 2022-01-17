@@ -19,5 +19,6 @@
         <activity android:name=".View.MainActivity"/>
         <activity android:name=".View.ExerciseActivity"/>
         <activity android:name=".View.DumbellTrackingActivity"/>
+        <activity android:name=".View.InsightsActivity"/>
     </application>
 </manifest>

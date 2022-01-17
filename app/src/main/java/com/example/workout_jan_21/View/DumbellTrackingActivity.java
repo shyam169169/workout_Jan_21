@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -23,6 +24,7 @@ public class DumbellTrackingActivity extends AppCompatActivity implements Presen
     protected TextView setsText;
     protected TextView repsText;
     protected TextView weightsText;
+    protected Button continueBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +46,18 @@ public class DumbellTrackingActivity extends AppCompatActivity implements Presen
         repsText = (TextView) findViewById(R.id.id_seekbar_reps_text);
         weightsText = (TextView) findViewById(R.id.id_seekbar_weights_text);
 
-
-        setsText.setText("34");
         sets.setOnSeekBarChangeListener(seekBarChangeListener);
         reps.setOnSeekBarChangeListener(seekBarChangeListener);
         weights.setOnSeekBarChangeListener(seekBarChangeListener);
+
+        continueBtn = (Button) findViewById(R.id.id_dumbell_tracking_continue_button);
+
+        continueBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DumbellTrackingActivity.this, InsightsActivity.class));
+            }
+        });
 
         HashMap<String, Object> params = new HashMap<>();
         params.put("sets", setsText.getText().toString());
@@ -85,8 +94,6 @@ public class DumbellTrackingActivity extends AppCompatActivity implements Presen
                         weightsText.setText("" + progressval);
                 }
             }
-
-
     };
 
 
